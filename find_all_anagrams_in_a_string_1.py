@@ -1,3 +1,6 @@
+# Leetcode 438 Find All Anagrams in a String
+# Sliding window with hashmap approach
+
 from collections import Counter
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
