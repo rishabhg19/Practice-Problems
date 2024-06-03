@@ -1,3 +1,6 @@
+# Leetcode 438 Find All Anagrams in a String
+# Sliding window with list to count character frequency method
+
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
         slen, plen = len(s), len(p)
@@ -5,6 +8,8 @@ class Solution:
         pCounts = [0]*26
         sCounts = [0]*26
         for character in p:
+            # ord(char) gets the alphabetical order value for indexing 
+            # a is 0 b is 1 z is 25
             pCounts[ord(character) - ord('a')] += 1
         
         for i in range(slen):
