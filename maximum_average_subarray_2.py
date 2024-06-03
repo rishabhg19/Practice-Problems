@@ -1,3 +1,6 @@
+# Leetcode 643 Maximum Average Subarray
+# Sliding window approach
+
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
         n = len(nums)
